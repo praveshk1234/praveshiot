@@ -24,8 +24,8 @@ SECRET_KEY = 'django-insecure-__ci!ulf=7em((fzna3aog7p^9!b)*owusu^=itltjx(yo0*$(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','192.168.137.1']
+SITE_ID = 1
+ALLOWED_HOSTS = ['127.0.0.1','praveshiot.herokuapp.com']
 
 
 # Application definition
