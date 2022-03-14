@@ -1,0 +1,27 @@
+{% extends 'header.html' %}
+{% block content %}
+<h1> Project list</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Acticate Date</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for node in nodes %}
+      <tr>
+        <th scope="row">1</th>
+        <td>{{node.name}}</td>
+        <td>{{ node.activate_date}}</td>
+        <td><a href="{% url 'node-detail' node.pk %}">{{node.name}}</a></td>
+      </tr>
+      {% endfor %}
+      
+    </tbody>
+  </table>
+
+{% endblock content %}
